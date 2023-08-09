@@ -1,0 +1,134 @@
+body, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #033043;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 30px;
+}
+
+.portfolio-heading {
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #ffc107;
+}
+
+/* Main content styles */
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+.portfolio-item {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px; /* Increase card border-radius */
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
+    max-width: 1000px; /* Increase card max-width */
+    
+}
+
+.portfolio-item:nth-child(even) {
+    flex-direction: row-reverse; /* Display even-numbered cards from right to left */
+}
+
+.portfolio-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.view-portfolio-button {
+    background-color: #033043;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.view-portfolio-button:hover {
+    background-color: #033043;
+}
+
+.image-container {
+    overflow: hidden;
+    border-radius: 50%;
+    width: 200px; /* Increase image width */
+    height: 200px; /* Increase image height */
+    flex: none;
+    margin-right: 20px;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.description {
+    flex: 1;
+}
+
+.description h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.description p {
+    color: #666;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: black;
+    color: white;
+    font-size: 14px;
+}
+.portfolio-item {
+    border: 2px solid #033043;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
